@@ -1,0 +1,8 @@
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe.config
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.pdb
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.csprojResolveAssemblyReference.cache
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.Properties.Resources.resources
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.csproj.GenerateResource.Cache
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.exe
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.pdb
