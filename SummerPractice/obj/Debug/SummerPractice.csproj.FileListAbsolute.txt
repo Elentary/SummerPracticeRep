@@ -6,3 +6,4 @@ C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice
 C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.csproj.GenerateResource.Cache
 C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.exe
 C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.pdb
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.LoadingScreen.resources
