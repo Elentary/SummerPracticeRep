@@ -7,3 +7,9 @@ C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice
 C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.exe
 C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.pdb
 C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.LoadingScreen.resources
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.Form1.resources
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\NLog.dll
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\NLog.xml
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\NLog.config
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\NLog.Windows.Forms.dll
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\NLog.Windows.Forms.xml
