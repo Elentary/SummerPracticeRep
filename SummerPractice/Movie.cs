@@ -11,7 +11,7 @@ namespace SummerPractice
     public String Title, Genre, Director, ManStar, WomanStar, Company;
     public int Year;
     public double Cost;
-    public Cinema[] Cinemas;
+    public List<Cinema> Cinemas;
 
     protected bool Equals(Movie other)
     {
@@ -23,7 +23,6 @@ namespace SummerPractice
 
     public override string ToString()
     {
-      //check how cinemas is formatting
       return
         $"Title: {Title}, Genre: {Genre}, Director: {Director}, ManStar: {ManStar}, WomanStar: {WomanStar}, Company: {Company}, Year: {Year}, Cost: {Cost}, Cinemas: {Cinemas}";
     }
@@ -55,13 +54,13 @@ namespace SummerPractice
 
     public Movie()
     {
-      foreach (var field in typeof(Movie).GetProperties())
+      foreach (var field in this.GetType().GetProperties())
       {
         field.SetValue(this, null);
       }
     }
 
-    public Movie(String[] strVals, int year, double cost, Cinema[] cinemas)
+    public Movie(String[] strVals, int year, double cost, List<Cinema> cinemas)
     {
       if (strVals.Length != 5)
         throw new Exception("Invalid dimension of parameters array");
