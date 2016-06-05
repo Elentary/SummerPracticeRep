@@ -50,7 +50,7 @@ namespace SummerPractice
 
     public CinemaReport getInfo()
     {
-      throw new NotImplementedException();
+      return new CinemaReport(this);
     }
 
     public DailyReport getDayReport()

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SummerPractice
 {
-  class WeekReport: Report
+  class WeekReport : Report
   {
-    public Tuple<DateTime, DateTime> Period;
-    public List<MovieReport> MovieReports;
+    public readonly Tuple<DateTime, DateTime> Period;
+    public readonly List<MovieReport> MovieReports;
 
     public WeekReport(Tuple<DateTime, DateTime> period, Movie[] movies)
     {
@@ -24,7 +24,6 @@ namespace SummerPractice
           MovieReports.Add(new MovieReport(movie));
         }
       }
-
     }
 
     public override string ToString()
