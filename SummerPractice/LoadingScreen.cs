@@ -16,5 +16,22 @@ namespace SummerPractice
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (progressBar1.Value >= 100)
+            {
+                this.Hide();
+                timer1.Dispose();
+                (new Form1()).Show();
+                return;
+            }
+            progressBar1.Value++;
+        }
+    }
 }
