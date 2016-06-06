@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProtoBuf;
 
 namespace SummerPractice
 {
+  [ProtoContract]
   class Movie
   {
-    public String Title, Genre, Director, ManStar, WomanStar, Company;
-    public int Year;
-    public double Cost;
+    [ProtoMember(1)]
+    public String Title; [ProtoMember(2)]
+    public String Genre; [ProtoMember(3)]
+    public String Director; [ProtoMember(4)]
+    public String ManStar; [ProtoMember(5)]
+    public String WomanStar; [ProtoMember(6)]
+    public String Company; [ProtoMember(7)]
+    public int Year; [ProtoMember(8)]
+    public double Cost; [ProtoMember(9)]
     public List<Cinema> Cinemas;
 
     protected bool Equals(Movie other)

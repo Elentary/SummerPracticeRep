@@ -5,16 +5,21 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using ProtoBuf;
 
 namespace SummerPractice
 {
+  [ProtoContract]
   class Cinema
   {
-    public String Name, Adress, CEO;
-    private CinemaType Type;
-    public int Capacity;
-    public List<Movie> Movies;
-    public SortedDictionary<Movie, Tuple<DateTime, DateTime>> Dates;
+    [ProtoMember(1)]
+    public String Name; [ProtoMember(2)]
+    public String Adress; [ProtoMember(3)]
+    public String CEO; [ProtoMember(4)]
+    private CinemaType Type; [ProtoMember(5)]
+    public int Capacity; [ProtoMember(6)]
+    public List<Movie> Movies; [ProtoMember(7)]
+    public SortedDictionary<Movie, Tuple<DateTime, DateTime>> Dates; [ProtoMember(8)]
     public SortedDictionary<Tuple<Movie, DateTime>, int> Attendance;
 
     public Cinema()
