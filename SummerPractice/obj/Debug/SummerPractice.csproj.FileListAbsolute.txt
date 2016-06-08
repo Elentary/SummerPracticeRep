@@ -13,3 +13,8 @@ C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\NLog.xml
 C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\NLog.config
 C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\NLog.Windows.Forms.dll
 C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\NLog.Windows.Forms.xml
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\protobuf-net.dll
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\protobuf-net.pdb
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\protobuf-net.xml
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.SearchResults.resources
+C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\obj\Debug\SummerPractice.SearchResults2.resources

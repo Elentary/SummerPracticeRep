@@ -8,18 +8,63 @@ using ProtoBuf;
 namespace SummerPractice
 {
   [ProtoContract]
-  class Movie
+  public class Movie
   {
-    [ProtoMember(1)]
-    public String Title; [ProtoMember(2)]
-    public String Genre; [ProtoMember(3)]
-    public String Director; [ProtoMember(4)]
-    public String ManStar; [ProtoMember(5)]
-    public String WomanStar; [ProtoMember(6)]
-    public String Company; [ProtoMember(7)]
-    public int Year; [ProtoMember(8)]
-    public double Cost; [ProtoMember(9)]
-    public List<Cinema> Cinemas;
+    [ProtoMember(1)] public String Title;
+    [ProtoMember(2)] public String Genre;
+    [ProtoMember(3)] public String Director;
+    [ProtoMember(4)] public String ManStar;
+    [ProtoMember(5)] public String WomanStar;
+    [ProtoMember(6)] public String Company;
+    [ProtoMember(7)] public int Year;
+    [ProtoMember(8)] public double Cost;
+    [ProtoMember(9)] public List<Cinema> Cinemas;
+
+    public Movie()
+    {
+      foreach (var field in this.GetType().GetProperties())
+      {
+        field.SetValue(this, null);
+      }
+    }
+
+    public Movie(String[] strVals, int year, double cost, List<Cinema> cinemas)
+    {
+      if (strVals.Length != 6)
+        throw new Exception("Invalid dimension of parameters array");
+      Title = strVals[0];
+      Genre = strVals[1];
+      Director = strVals[2];
+      ManStar = strVals[3];
+      WomanStar = strVals[4];
+      Company = strVals[5];
+
+      Cost = cost;
+      Year = year;
+      Cinemas = cinemas;
+    }
+
+    public MovieReport getInfo()
+    {
+      return new MovieReport(this);
+    }
+
+    public void update()
+    {
+      throw new NotImplementedException();
+    }
+
+    public Dictionary<Cinema, double> getMovieProfits()
+    {
+      Dictionary<Cinema, double> result = new Dictionary<Cinema, double>();
+      foreach (var cinema in Cinemas)
+      {
+        PeriodReport report = new PeriodReport(cinema,
+          new Tuple<DateTime, DateTime>(DateTime.MinValue, DateTime.MaxValue));
+        result.Add(cinema, Cost * report.Attendance[this]);
+      }
+      return result;
+    }
 
     protected bool Equals(Movie other)
     {
@@ -58,35 +103,6 @@ namespace SummerPractice
         hashCode = (hashCode * 397) ^ (Cinemas != null ? Cinemas.GetHashCode() : 0);
         return hashCode;
       }
-    }
-
-    public Movie()
-    {
-      foreach (var field in this.GetType().GetProperties())
-      {
-        field.SetValue(this, null);
-      }
-    }
-
-    public Movie(String[] strVals, int year, double cost, List<Cinema> cinemas)
-    {
-      if (strVals.Length != 5)
-        throw new Exception("Invalid dimension of parameters array");
-      Title = strVals[0];
-      Genre = strVals[1];
-      Director = strVals[2];
-      ManStar = strVals[3];
-      WomanStar = strVals[4];
-      Company = strVals[5];
-
-      Cost = cost;
-      Year = year;
-      Cinemas = cinemas;
-    }
-
-    public MovieReport getInfo()
-    {
-      return new MovieReport(this);
     }
   }
 }

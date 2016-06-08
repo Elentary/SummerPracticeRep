@@ -10,17 +10,16 @@ using ProtoBuf;
 namespace SummerPractice
 {
   [ProtoContract]
-  class Cinema
+  public class Cinema
   {
-    [ProtoMember(1)]
-    public String Name; [ProtoMember(2)]
-    public String Adress; [ProtoMember(3)]
-    public String CEO; [ProtoMember(4)]
-    private CinemaType Type; [ProtoMember(5)]
-    public int Capacity; [ProtoMember(6)]
-    public List<Movie> Movies; [ProtoMember(7)]
-    public SortedDictionary<Movie, Tuple<DateTime, DateTime>> Dates; [ProtoMember(8)]
-    public SortedDictionary<Tuple<Movie, DateTime>, int> Attendance;
+    [ProtoMember(1)] public String Name;
+    [ProtoMember(2)] public String Adress;
+    [ProtoMember(3)] public String CEO;
+    [ProtoMember(4)] private CinemaType Type;
+    [ProtoMember(5)] public int Capacity;
+    [ProtoMember(6)] public List<Movie> Movies;
+    [ProtoMember(7)] public SortedDictionary<Movie, Tuple<DateTime, DateTime>> Dates;
+    [ProtoMember(8)] public SortedDictionary<Tuple<Movie, DateTime>, int> Attendance;
 
     public Cinema()
     {
@@ -31,7 +30,8 @@ namespace SummerPractice
     }
 
     public Cinema(String name, String type, int capacity, String adress, String ceo, List<Movie> movies
-      ,SortedDictionary<Movie, Tuple<DateTime, DateTime>> dates, SortedDictionary<Tuple<Movie, DateTime>, int> attendance)
+      , SortedDictionary<Movie, Tuple<DateTime, DateTime>> dates,
+      SortedDictionary<Tuple<Movie, DateTime>, int> attendance)
     {
       Name = name;
       if (!CinemaType.TryParse(type, out Type))
@@ -75,7 +75,8 @@ namespace SummerPractice
 
     public override string ToString()
     {
-      return $"Name: {Name}, Adress: {Adress}, Ceo: {CEO}, Type: {Type}, Capacity: {Capacity}, Movies: {Movies}, Dates: {Dates}, Attendance: {Attendance}";
+      return
+        $"Name: {Name}, Adress: {Adress}, Ceo: {CEO}, Type: {Type}, Capacity: {Capacity}, Movies: {Movies}, Dates: {Dates}, Attendance: {Attendance}";
     }
 
     protected bool Equals(Cinema other)

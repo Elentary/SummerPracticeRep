@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SummerPractice
 {
-  abstract class Report
+  public abstract class Report
   {
     public abstract override string ToString();
 

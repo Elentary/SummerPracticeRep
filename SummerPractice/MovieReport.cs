@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SummerPractice
 {
-  class MovieReport: Report
+  public class MovieReport: Report
   {
     public readonly String Title, Genre, Director, ManStar, WomanStar, Company;
     public readonly int Year;

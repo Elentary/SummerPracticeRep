@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SummerPractice
 {
-  class WeekReport : Report
+  public class WeekReport : Report
   {
     public readonly Tuple<DateTime, DateTime> Period;
     public readonly List<MovieReport> MovieReports;

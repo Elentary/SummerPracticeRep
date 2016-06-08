@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SummerPractice
 {
-    class DailyReport: CinemaReport
+    public class DailyReport: CinemaReport
     {
       public readonly DateTime Date;
       public readonly SortedDictionary<Movie, int> Attendance;

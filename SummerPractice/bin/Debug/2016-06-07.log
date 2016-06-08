@@ -1,0 +1,96 @@
+2016-06-07 13:22:26.2530 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:22:26.2740 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:22:26.2740 TRACE CommandLine: "C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe"  
+2016-06-07 13:36:58.1542 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:36:58.1702 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:36:58.1702 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 13:37:14.6873 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:37:14.6873 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:37:14.6873 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-07 13:37:20.8300 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:37:20.8300 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:37:20.8300 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-07 13:41:35.9998 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:41:36.0188 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:41:36.0188 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-07 13:42:09.2048 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:42:09.2208 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:42:09.2208 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-07 13:44:41.0932 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:44:41.1088 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:44:41.1088 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-07 13:45:23.4838 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:45:23.5018 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:45:23.5018 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-07 13:46:19.6562 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:46:19.6772 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:46:19.6772 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-07 13:47:03.8121 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:47:03.8281 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:47:03.8281 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-07 13:49:07.6246 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:49:07.6466 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:49:07.6466 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 13:53:27.1763 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:53:27.1963 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:53:27.1963 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 13:54:15.4577 INFO System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 66 System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 66
+2016-06-07 13:54:19.5212 INFO System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 66 System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 66
+2016-06-07 13:57:57.0000 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:57:57.0000 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:57:57.0000 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 13:58:03.4984 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:58:03.4984 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:58:03.4984 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 13:58:25.1710 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:58:25.1710 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:58:25.1860 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 13:58:29.6719 INFO System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 66 System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 66
+2016-06-07 13:59:42.8116 TRACE Version: 4.0.30319.42000 
+2016-06-07 13:59:42.8116 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 13:59:42.8116 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 14:02:29.0484 TRACE Version: 4.0.30319.42000 
+2016-06-07 14:02:29.0664 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 14:02:29.0664 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 14:02:33.4116 INFO System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 66 System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 66
+2016-06-07 14:10:39.7023 TRACE Version: 4.0.30319.42000 
+2016-06-07 14:10:39.7243 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 14:10:39.7243 TRACE CommandLine: "C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe"  
+2016-06-07 14:21:25.8892 TRACE Version: 4.0.30319.42000 
+2016-06-07 14:21:25.9177 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 14:21:25.9177 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 14:22:48.7486 TRACE Version: 4.0.30319.42000 
+2016-06-07 14:22:48.7486 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 14:22:48.7641 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 14:30:26.1740 TRACE Version: 4.0.30319.42000 
+2016-06-07 14:30:26.1885 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 14:30:26.1885 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-07 14:30:31.0032 INFO System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 67 System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button1_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 67
+2016-06-07 14:30:35.9064 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 130 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 130
+2016-06-07 14:30:41.3533 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 130 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 130
+2016-06-07 14:30:43.0578 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 130 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 130
+2016-06-07 14:30:50.6094 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 130 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 130
+2016-06-07 14:39:33.4668 TRACE Version: 4.0.30319.42000 
+2016-06-07 14:39:33.4668 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 14:39:33.4668 TRACE CommandLine: "C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe"  
+2016-06-07 14:39:56.7016 TRACE Version: 4.0.30319.42000 
+2016-06-07 14:39:56.7325 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-07 14:39:56.7325 TRACE CommandLine: "C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe"  

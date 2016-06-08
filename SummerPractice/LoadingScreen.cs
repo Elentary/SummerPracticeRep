@@ -29,7 +29,8 @@ namespace SummerPractice
       {
         timer1.Stop();
         this.Hide();
-        (new Form1()).Show();
+        Program.MainForm = new Form1();
+        Program.MainForm.Show();
         return;
       }
       progressBar1.Value++;

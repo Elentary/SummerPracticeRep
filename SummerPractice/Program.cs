@@ -38,5 +38,6 @@ namespace SummerPractice
     }
 
     public static Logger log;
+    public static Form1 MainForm;
   }
 }

@@ -1,0 +1,144 @@
+2016-06-08 10:03:06.4773 TRACE Version: 4.0.30319.42000 
+2016-06-08 10:03:06.5034 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 10:03:06.5054 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 10:13:33.5374 TRACE Version: 4.0.30319.42000 
+2016-06-08 10:13:33.5374 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 10:13:33.5524 TRACE CommandLine: "C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe"  
+2016-06-08 10:13:43.0865 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 150 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 150
+2016-06-08 10:14:10.5872 TRACE Version: 4.0.30319.42000 
+2016-06-08 10:14:10.5872 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 10:14:10.5992 TRACE CommandLine: "C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe"  
+2016-06-08 10:15:09.9305 TRACE Version: 4.0.30319.42000 
+2016-06-08 10:15:09.9495 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 10:15:09.9495 TRACE CommandLine: "C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe"  
+2016-06-08 11:21:28.7420 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:21:28.7570 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:21:28.7570 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:21:51.8972 INFO System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button5_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 267 System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button5_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 267
+2016-06-08 11:27:07.2243 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:27:07.2403 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:27:07.2403 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:39:50.7420 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:39:50.7610 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:39:50.7610 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:40:14.3376 WARN System.ComponentModel.WarningException: Невозможно преобразовать к типу перечисления System.ComponentModel.WarningException: Невозможно преобразовать к типу перечисления
+2016-06-08 11:44:15.9786 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:44:15.9976 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:44:15.9976 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:44:28.8965 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188
+2016-06-08 11:44:30.7278 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188
+2016-06-08 11:44:40.9598 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:44:40.9788 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:44:40.9788 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:45:01.3542 INFO System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button5_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 274 System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button5_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 274
+2016-06-08 11:45:04.4556 INFO System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button5_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 274 System.Exception: Невозможно распознать выбранный критерий поиска
+   в SummerPractice.Form1.button5_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 274
+2016-06-08 11:46:38.4771 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:46:38.4771 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:46:38.4771 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:47:55.2756 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:47:55.2936 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:47:55.2936 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:48:16.7684 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188
+2016-06-08 11:49:41.6505 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:49:41.6685 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:49:41.6685 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:50:23.7198 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188
+2016-06-08 11:50:25.0628 INFO System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188 System.Exception: Пустое имя кинотеатра
+   в SummerPractice.Form1.addCinema_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 188
+2016-06-08 11:51:47.8984 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:51:47.8984 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:51:47.8984 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:51:55.9519 INFO System.InvalidOperationException: Если ListView находится в виртуальном режиме, добавление элементов в коллекцию элементов ListView невозможно. Вместо этого используйте свойство VirtualListSize, чтобы изменить размер коллекции элементов ListView.
+   в System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   в System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   в SummerPractice.Form1.AddCinema(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 193 System.InvalidOperationException: Если ListView находится в виртуальном режиме, добавление элементов в коллекцию элементов ListView невозможно. Вместо этого используйте свойство VirtualListSize, чтобы изменить размер коллекции элементов ListView.
+   в System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   в System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   в SummerPractice.Form1.AddCinema(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 193
+2016-06-08 11:52:19.5403 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:52:19.5598 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:52:19.5598 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:52:27.5489 INFO System.InvalidOperationException: Если ListView находится в виртуальном режиме, добавление элементов в коллекцию элементов ListView невозможно. Вместо этого используйте свойство VirtualListSize, чтобы изменить размер коллекции элементов ListView.
+   в System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   в System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   в SummerPractice.Form1.AddCinema(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 193 System.InvalidOperationException: Если ListView находится в виртуальном режиме, добавление элементов в коллекцию элементов ListView невозможно. Вместо этого используйте свойство VirtualListSize, чтобы изменить размер коллекции элементов ListView.
+   в System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   в System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   в SummerPractice.Form1.AddCinema(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 193
+2016-06-08 11:52:30.6074 INFO System.InvalidOperationException: Если ListView находится в виртуальном режиме, добавление элементов в коллекцию элементов ListView невозможно. Вместо этого используйте свойство VirtualListSize, чтобы изменить размер коллекции элементов ListView.
+   в System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   в System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   в SummerPractice.Form1.AddCinema(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 193 System.InvalidOperationException: Если ListView находится в виртуальном режиме, добавление элементов в коллекцию элементов ListView невозможно. Вместо этого используйте свойство VirtualListSize, чтобы изменить размер коллекции элементов ListView.
+   в System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   в System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   в SummerPractice.Form1.AddCinema(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 193
+2016-06-08 11:52:39.7247 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:52:39.7437 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:52:39.7437 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 11:56:16.1346 TRACE Version: 4.0.30319.42000 
+2016-06-08 11:56:16.1527 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 11:56:16.1527 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 12:03:23.5094 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:03:23.5294 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:03:23.5294 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 12:07:29.1370 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:07:29.1550 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:07:29.1550 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 12:07:36.3962 INFO System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в SummerPractice.Form1.button8_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 392 System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в SummerPractice.Form1.button8_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 392
+2016-06-08 12:07:38.8947 INFO System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в SummerPractice.Form1.button8_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 392 System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в SummerPractice.Form1.button8_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 392
+2016-06-08 12:07:44.8314 INFO System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в SummerPractice.Form1.addCinemaDates(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 182 System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в SummerPractice.Form1.addCinemaDates(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 182
+2016-06-08 12:07:46.8397 INFO System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в SummerPractice.Form1.addCinemaDates(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 182 System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в SummerPractice.Form1.addCinemaDates(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 182
+2016-06-08 12:08:30.5396 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:08:30.5396 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:08:30.5396 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 12:08:37.0636 INFO System.Exception: Ничего не выбрано
+   в SummerPractice.Form1.button8_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 393 System.Exception: Ничего не выбрано
+   в SummerPractice.Form1.button8_Click(Object sender, EventArgs e) в C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\Form1.cs:строка 393
+2016-06-08 12:17:38.0425 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:17:38.0625 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:17:38.0625 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 12:18:30.9985 WARN System.ComponentModel.WarningException: Невозможно преобразовать к типу перечисления System.ComponentModel.WarningException: Невозможно преобразовать к типу перечисления
+2016-06-08 12:18:33.4549 WARN System.ComponentModel.WarningException: Невозможно преобразовать к типу перечисления System.ComponentModel.WarningException: Невозможно преобразовать к типу перечисления
+2016-06-08 12:20:56.9286 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:20:56.9286 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:20:56.9286 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 12:25:33.8987 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:25:33.8987 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:25:33.8987 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 12:35:58.7245 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:35:58.7245 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:35:58.7245 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 
+2016-06-08 12:37:32.5365 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:37:32.5565 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:37:32.5565 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-08 12:38:55.0546 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:38:55.0546 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:38:55.0546 TRACE CommandLine: "C:/Users/amare/Desktop/SummerPracticeRep/SummerPractice/bin/Debug/SummerPractice.exe"  
+2016-06-08 12:39:19.0374 TRACE Version: 4.0.30319.42000 
+2016-06-08 12:39:19.0374 TRACE OS: Microsoft Windows NT 6.2.9200.0 
+2016-06-08 12:39:19.0374 TRACE CommandLine: C:\Users\amare\Desktop\SummerPracticeRep\SummerPractice\bin\Debug\SummerPractice.exe 

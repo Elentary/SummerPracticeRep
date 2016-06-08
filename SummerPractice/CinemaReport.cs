@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SummerPractice
 {
-    class CinemaReport: Report
+    public class CinemaReport: Report
     {
       public readonly String Name, Adress, CEO;
       private readonly CinemaType Type;

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using ProtoBuf;
@@ -8,17 +9,15 @@ using ProtoBuf;
 namespace SummerPractice
 {
   [ProtoContract]
-  class ControlCinema
+  public class ControlCinema
   {
     [ProtoMember(1)] public List<Cinema> Cinemas;
     [ProtoMember(2)] public List<Movie> Movies;
 
     public ControlCinema()
     {
-      foreach (var field in this.GetType().GetProperties())
-      {
-        field.SetValue(this, null);
-      }
+      Cinemas = new List<Cinema>();
+      Movies = new List<Movie>();
     }
 
     public ControlCinema(List<Cinema> cinemas, List<Movie> movies)
