@@ -28,6 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
@@ -108,6 +112,7 @@
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader35 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button11 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -131,9 +136,16 @@
             this.columnHeader31 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader32 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader33 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader34 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button15 = new System.Windows.Forms.Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.listView7 = new System.Windows.Forms.ListView();
+            this.columnHeader36 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader37 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button18 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button16 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.button17 = new System.Windows.Forms.Button();
             this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
@@ -154,6 +166,11 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.listView8 = new System.Windows.Forms.ListView();
+            this.columnHeader38 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader39 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -165,11 +182,14 @@
             this.tabPage3.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -182,6 +202,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(863, 480);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
             // tabPage1
             // 
@@ -895,7 +916,8 @@
             this.columnHeader22,
             this.columnHeader23,
             this.columnHeader24,
-            this.columnHeader25});
+            this.columnHeader25,
+            this.columnHeader35});
             this.listView5.FullRowSelect = true;
             this.listView5.GridLines = true;
             this.listView5.Location = new System.Drawing.Point(3, 4);
@@ -953,6 +975,10 @@
             this.columnHeader25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader25.Width = 86;
             // 
+            // columnHeader35
+            // 
+            this.columnHeader35.Text = "Срок";
+            // 
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(491, 222);
@@ -965,6 +991,8 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.listView8);
+            this.tabPage5.Controls.Add(this.chart1);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -1083,7 +1111,8 @@
             this.columnHeader30,
             this.columnHeader31,
             this.columnHeader32,
-            this.columnHeader33});
+            this.columnHeader33,
+            this.columnHeader34});
             this.listView6.FullRowSelect = true;
             this.listView6.GridLines = true;
             this.listView6.Location = new System.Drawing.Point(3, 4);
@@ -1141,6 +1170,10 @@
             this.columnHeader33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader33.Width = 86;
             // 
+            // columnHeader34
+            // 
+            this.columnHeader34.Text = "Сбор";
+            // 
             // button15
             // 
             this.button15.Location = new System.Drawing.Point(491, 222);
@@ -1153,6 +1186,8 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.listView7);
+            this.tabPage8.Controls.Add(this.button18);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Size = new System.Drawing.Size(575, 393);
@@ -1160,8 +1195,46 @@
             this.tabPage8.Text = "Отчет #5";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // listView7
+            // 
+            this.listView7.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader36,
+            this.columnHeader37});
+            this.listView7.FullRowSelect = true;
+            this.listView7.GridLines = true;
+            this.listView7.Location = new System.Drawing.Point(3, 4);
+            this.listView7.MultiSelect = false;
+            this.listView7.Name = "listView7";
+            this.listView7.Size = new System.Drawing.Size(184, 212);
+            this.listView7.TabIndex = 8;
+            this.listView7.UseCompatibleStateImageBehavior = false;
+            this.listView7.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader36
+            // 
+            this.columnHeader36.Text = "Кинотеатр";
+            this.columnHeader36.Width = 86;
+            // 
+            // columnHeader37
+            // 
+            this.columnHeader37.Text = "Выручка";
+            this.columnHeader37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader37.Width = 98;
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(204, 193);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.TabIndex = 7;
+            this.button18.Text = "Показать";
+            this.button18.UseVisualStyleBackColor = true;
+            // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.comboBox5);
+            this.groupBox5.Controls.Add(this.button16);
+            this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Controls.Add(this.label17);
             this.groupBox5.Controls.Add(this.button17);
             this.groupBox5.Controls.Add(this.dateTimePicker8);
@@ -1179,6 +1252,25 @@
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Управление";
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(9, 331);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(75, 23);
+            this.button16.TabIndex = 13;
+            this.button16.Text = "Отчет";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.profitFromCinemas);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 286);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(107, 13);
+            this.label18.TabIndex = 12;
+            this.label18.Text = "Выручка по фильму";
             // 
             // label17
             // 
@@ -1338,6 +1430,61 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(9, 304);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(121, 21);
+            this.comboBox5.TabIndex = 14;
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(3, 3);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Суммарная прибыль";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Средняя прибыль";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(569, 387);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
+            // listView8
+            // 
+            this.listView8.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader38,
+            this.columnHeader39});
+            this.listView8.FullRowSelect = true;
+            this.listView8.GridLines = true;
+            this.listView8.Location = new System.Drawing.Point(402, 53);
+            this.listView8.MultiSelect = false;
+            this.listView8.Name = "listView8";
+            this.listView8.Size = new System.Drawing.Size(167, 212);
+            this.listView8.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.listView8.TabIndex = 5;
+            this.listView8.UseCompatibleStateImageBehavior = false;
+            this.listView8.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader38
+            // 
+            this.columnHeader38.Text = "Номер";
+            this.columnHeader38.Width = 79;
+            // 
+            // columnHeader39
+            // 
+            this.columnHeader39.Text = "Название";
+            this.columnHeader39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader39.Width = 84;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1366,14 +1513,17 @@
             this.tabPage3.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
+            this.tabPage8.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1508,6 +1658,19 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.ColumnHeader columnHeader34;
+        private System.Windows.Forms.ColumnHeader columnHeader35;
+        private System.Windows.Forms.ListView listView7;
+        private System.Windows.Forms.ColumnHeader columnHeader36;
+        private System.Windows.Forms.ColumnHeader columnHeader37;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.ListView listView8;
+        private System.Windows.Forms.ColumnHeader columnHeader38;
+        private System.Windows.Forms.ColumnHeader columnHeader39;
     }
 }
 

@@ -29,7 +29,7 @@ namespace SummerPractice
       Movies = movies;
     }
 
-    public List<Tuple<MovieReport, List<Cinema>>> getLongestPeriodMovieInfo()
+    public Tuple<List<Tuple<MovieReport, List<Cinema>>>, int> getLongestPeriodMovieInfo()
     {
       int best = 0;
       foreach (var cinema in Cinemas)
@@ -61,7 +61,7 @@ namespace SummerPractice
       {
         result.Add(new Tuple<MovieReport, List<Cinema>>(new MovieReport(obj.Key), obj.Value));
       }
-      return result;
+      return new Tuple<List<Tuple<MovieReport, List<Cinema>>>, int>(result, best);
     }
 
     public PeriodReport[] getPeriodReport(Tuple<DateTime, DateTime> period)
@@ -80,20 +80,21 @@ namespace SummerPractice
       return new WeekReport(period, Movies.ToArray());
     }
 
-    public MovieReport[] getMostProfitMovies()
+    public Tuple<MovieReport[], double> getMostProfitMovies()
     {
       double best = 0;
       foreach (var movie in Movies)
       {
         int attendance = 0;
-        foreach (var cinema in movie.Cinemas)
+        foreach (var cinema in Cinemas)
         {
-          for (DateTime day = cinema.Dates[movie].Item1; day != cinema.Dates[movie].Item2;)
-          {
-            if (cinema.Attendance.ContainsKey(new Tuple<Movie, DateTime>(movie, day)))
-              attendance += cinema.Attendance[new Tuple<Movie, DateTime>(movie, day)];
-            day = day.AddDays(1);
-          }
+          if (cinema.Dates.ContainsKey(movie))
+            for (DateTime day = cinema.Dates[movie].Item1; day != cinema.Dates[movie].Item2;)
+            {
+              if (cinema.Attendance.ContainsKey(new Tuple<Movie, DateTime>(movie, day)))
+                attendance += cinema.Attendance[new Tuple<Movie, DateTime>(movie, day)];
+              day = day.AddDays(1);
+            }
         }
         if (attendance * movie.Cost > best)
           best = attendance * movie.Cost;
@@ -102,19 +103,20 @@ namespace SummerPractice
       foreach (var movie in Movies)
       {
         int attendance = 0;
-        foreach (var cinema in movie.Cinemas)
+        foreach (var cinema in Cinemas)
         {
-          for (DateTime day = cinema.Dates[movie].Item1; day != cinema.Dates[movie].Item2;)
-          {
-            if (cinema.Attendance.ContainsKey(new Tuple<Movie, DateTime>(movie, day)))
-              attendance += cinema.Attendance[new Tuple<Movie, DateTime>(movie, day)];
-            day = day.AddDays(1);
-          }
+          if (cinema.Dates.ContainsKey(movie))
+            for (DateTime day = cinema.Dates[movie].Item1; day != cinema.Dates[movie].Item2;)
+            {
+              if (cinema.Attendance.ContainsKey(new Tuple<Movie, DateTime>(movie, day)))
+                attendance += cinema.Attendance[new Tuple<Movie, DateTime>(movie, day)];
+              day = day.AddDays(1);
+            }
         }
         if (attendance * movie.Cost == best && !result.Contains(new MovieReport(movie)))
           result.Add(new MovieReport(movie));
       }
-      return result.ToArray();
+      return new Tuple<MovieReport[], double>(result.ToArray(), best);
     }
 
     public override string ToString()

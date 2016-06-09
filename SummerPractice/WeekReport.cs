@@ -21,7 +21,8 @@ namespace SummerPractice
           Tuple<DateTime, DateTime> moviePeriod = cinema.getDates(movie);
           if (moviePeriod == null)
             continue;
-          if (MovieReports.Contains(new MovieReport(movie)) || moviePeriod.Item1 > period.Item2 || moviePeriod.Item2 < period.Item1)
+          if (MovieReports.Contains(new MovieReport(movie)) || moviePeriod.Item1 > period.Item2 ||
+              moviePeriod.Item2 < period.Item1)
             continue;
           MovieReports.Add(new MovieReport(movie));
         }

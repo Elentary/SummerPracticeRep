@@ -72,7 +72,7 @@ namespace SummerPractice
       return string.Equals(Title, other.Title) && string.Equals(Genre, other.Genre)
              && string.Equals(Director, other.Director) && string.Equals(ManStar, other.ManStar)
              && string.Equals(WomanStar, other.WomanStar) && string.Equals(Company, other.Company)
-             && Year == other.Year && Cost.Equals(other.Cost) && Equals(Cinemas, other.Cinemas);
+             && Year == other.Year && Cost.Equals(other.Cost);
     }
 
     public int CompareTo(Movie other)

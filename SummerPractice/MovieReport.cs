@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SummerPractice
 {
-  public class MovieReport: Report
+  public class MovieReport : Report
   {
     public readonly String Title, Genre, Director, ManStar, WomanStar, Company;
     public readonly int Year;
@@ -27,7 +27,8 @@ namespace SummerPractice
 
     public override string ToString()
     {
-      return $"Title: {Title}, Genre: {Genre}, Director: {Director}, ManStar: {ManStar}, WomanStar: {WomanStar}, Company: {Company}, Year: {Year}, Cost: {Cost}";
+      return
+        $"Title: {Title}, Genre: {Genre}, Director: {Director}, ManStar: {ManStar}, WomanStar: {WomanStar}, Company: {Company}, Year: {Year}, Cost: {Cost}";
     }
 
     public override bool Equals(object obj)
@@ -63,7 +64,7 @@ namespace SummerPractice
     }
   }
 
-  public class MovieReportComparer: Comparer<MovieReport>
+  public class MovieReportComparer : Comparer<MovieReport>
   {
     public override int Compare(MovieReport x, MovieReport y)
     {

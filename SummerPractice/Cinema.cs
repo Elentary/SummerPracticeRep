@@ -10,7 +10,7 @@ using ProtoBuf;
 namespace SummerPractice
 {
   [ProtoContract]
-  public class Cinema: IComparable<Cinema>
+  public class Cinema : IComparable<Cinema>
   {
     [ProtoMember(1)] public String Name;
     [ProtoMember(2)] public String Adress;
@@ -95,8 +95,7 @@ namespace SummerPractice
     protected bool Equals(Cinema other)
     {
       return string.Equals(Name, other.Name) && string.Equals(Adress, other.Adress) && string.Equals(CEO, other.CEO)
-             && Type == other.Type && Capacity == other.Capacity && Equals(Movies, other.Movies)
-             && Equals(Dates, other.Dates) && Equals(Attendance, other.Attendance);
+             && Type == other.Type && Capacity == other.Capacity;
     }
 
     public override bool Equals(object obj)

@@ -261,13 +261,16 @@ namespace SummerPractice
         {
           if (cinema.Name == listView1.Items[i].Text)
           {
-            foreach (var key in cinema.Attendance.Keys)
-            {
-              if (key.Item1 == LoadedMovie)
-                cinema.Attendance.Remove(key);
-            }
+            if (cinema.Dates.ContainsKey(LoadedMovie))
+              for (DateTime day = cinema.Dates[LoadedMovie].Item1.AddDays(-10);
+                day != cinema.Dates[LoadedMovie].Item2.AddDays(1);)
+              {
+                cinema.Attendance.Remove(new Tuple<Movie, DateTime>(LoadedMovie, day));
+                day = day.AddDays(1);
+              }
             cinema.Dates.Remove(LoadedMovie);
             cinema.Movies.Remove(LoadedMovie);
+            break;
           }
         }
       }
@@ -422,8 +425,8 @@ namespace SummerPractice
             {
               cinema.Attendance.Add(
                 new Tuple<Movie, DateTime>(movie,
-                  DateTime.ParseExact(listView3.Items[0].SubItems[2].Text, "dd.MM.yyyy", null)),
-                Int32.Parse(listView3.Items[0].SubItems[1].Text));
+                  DateTime.ParseExact(listView3.Items[i].SubItems[2].Text, "dd.MM.yyyy", null)),
+                Int32.Parse(listView3.Items[i].SubItems[1].Text));
             }
           }
         }
@@ -485,35 +488,51 @@ namespace SummerPractice
 
     private void Update(string filename, string filename2)
     {
-      using (var file = File.Open(filename, FileMode.Create))
+      try
       {
-        Serializer.Serialize(file, control.Cinemas);
+        using (var file = File.Open(filename, FileMode.Create))
+        {
+          Serializer.Serialize(file, control.Cinemas);
+        }
+        using (var file = File.Open(filename2, FileMode.Create))
+        {
+          Serializer.Serialize(file, control.Movies);
+        }
       }
-      using (var file = File.Open(filename2, FileMode.Create))
+      catch (Exception exception)
       {
-        Serializer.Serialize(file, control.Movies);
+        Program.log.Info(exception);
+        MessageBox.Show(exception.Message, "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
       }
     }
 
     private void Load(string filename, string filename2)
     {
-      using (var file = File.Open(filename, FileMode.OpenOrCreate))
+      try
       {
-        control.Cinemas = Serializer.Deserialize<List<Cinema>>(file);
-      }
-      using (var file = File.Open(filename2, FileMode.OpenOrCreate))
-      {
-        control.Movies = Serializer.Deserialize<List<Movie>>(file);
-      }
-      foreach (var movie in control.Movies)
-      {
-        List<Cinema> lst = new List<Cinema>();
-        foreach (var cinema in movie.Cinemas)
+        using (var file = File.Open(filename, FileMode.OpenOrCreate))
         {
-          if (!lst.Contains(cinema))
-            lst.Add(cinema);
+          control.Cinemas = Serializer.Deserialize<List<Cinema>>(file);
         }
-        movie.Cinemas = lst;
+        using (var file = File.Open(filename2, FileMode.OpenOrCreate))
+        {
+          control.Movies = Serializer.Deserialize<List<Movie>>(file);
+        }
+        foreach (var movie in control.Movies)
+        {
+          List<Cinema> lst = new List<Cinema>();
+          foreach (var cinema in movie.Cinemas)
+          {
+            if (!lst.Contains(cinema))
+              lst.Add(cinema);
+          }
+          movie.Cinemas = lst;
+        }
+      }
+      catch (Exception exception)
+      {
+        Program.log.Info(exception);
+        MessageBox.Show(exception.Message, "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
       }
     }
 
@@ -592,9 +611,9 @@ namespace SummerPractice
     //Tab3
     private void longestMovieReport(object sender, EventArgs e)
     {
-      List<Tuple<MovieReport, List<Cinema>>> result = control.getLongestPeriodMovieInfo();
+      Tuple<List<Tuple<MovieReport, List<Cinema>>>, int> result = control.getLongestPeriodMovieInfo();
       listView5.Items.Clear();
-      foreach (var elem in result)
+      foreach (var elem in result.Item1)
       {
         ListViewItem item = new ListViewItem(elem.Item1.Title);
         item.SubItems.Add(elem.Item1.Genre);
@@ -604,6 +623,7 @@ namespace SummerPractice
         item.SubItems.Add(elem.Item1.Company);
         item.SubItems.Add(elem.Item1.Year.ToString());
         item.SubItems.Add(elem.Item1.Cost.ToString());
+        item.SubItems.Add(result.Item2.ToString());
         listView5.Items.Add(item);
       }
       tabControl2.SelectTab(0);
@@ -617,10 +637,11 @@ namespace SummerPractice
           throw new Exception("Фильм не выбран");
         foreach (var movie in control.Movies)
         {
-          if (new MovieReport(movie).ToString() == listView5.SelectedItems[0].ToString())
+          if (movie.Title == listView5.SelectedItems[0].Text)
           {
             showMovie(movie);
             tabControl1.SelectTab(0);
+            Program.MainForm.LoadedMovie = movie;
             return;
           }
         }
@@ -640,7 +661,18 @@ namespace SummerPractice
           throw new Exception("Неправильно выставлен период");
         PeriodReport[] report =
           control.getPeriodReport(new Tuple<DateTime, DateTime>(dateTimePicker6.Value, dateTimePicker7.Value));
-        //chart1.
+        int i = 0;
+        foreach (var elem in report)
+        {
+          i++;
+          chart1.Series[0].Points.AddXY(i, elem.TotalProfit);
+          chart1.Series[1].Points.AddXY(i, elem.AverageProfit);
+
+          ListViewItem item = new ListViewItem(i.ToString());
+          item.SubItems.Add(elem.cinemaName);
+          listView8.Items.Add(item);
+        }
+        tabControl2.SelectTab(1);
       }
       catch (Exception exception)
       {
@@ -681,10 +713,11 @@ namespace SummerPractice
           throw new Exception("Фильм не выбран");
         foreach (var movie in control.Movies)
         {
-          if (new MovieReport(movie).ToString() == listView4.SelectedItems[0].ToString())
+          if (movie.Title == listView4.SelectedItems[0].Text)
           {
             showMovie(movie);
             tabControl1.SelectTab(0);
+            Program.MainForm.LoadedMovie = movie;
             return;
           }
         }
@@ -704,10 +737,11 @@ namespace SummerPractice
           throw new Exception("Фильм не выбран");
         foreach (var movie in control.Movies)
         {
-          if (new MovieReport(movie).ToString() == listView6.SelectedItems[0].ToString())
+          if (movie.Title == listView6.SelectedItems[0].Text)
           {
             showMovie(movie);
             tabControl1.SelectTab(0);
+            Program.MainForm.LoadedMovie = movie;
             return;
           }
         }
@@ -719,10 +753,61 @@ namespace SummerPractice
       }
     }
 
+    private void profitFromCinemas(object sender, EventArgs e)
+    {
+      try
+      {
+        if (comboBox5.SelectedItem == null)
+          throw new Exception("Фильм не выбран");
+        List<Tuple<Cinema, double>> result = new List<Tuple<Cinema, double>>();
+        foreach (var movie in control.Movies)
+        {
+          if (movie.Title != comboBox5.SelectedItem.ToString())
+            continue;
+
+          foreach (var cinema in control.Cinemas)
+          {
+            int attendance = 0;
+            if (cinema.Dates.ContainsKey(movie))
+              for (DateTime day = cinema.Dates[movie].Item1; day != cinema.Dates[movie].Item2;)
+              {
+                if (cinema.Attendance.ContainsKey(new Tuple<Movie, DateTime>(movie, day)))
+                  attendance += cinema.Attendance[new Tuple<Movie, DateTime>(movie, day)];
+                day = day.AddDays(1);
+              }
+            result.Add(new Tuple<Cinema, double>(cinema, attendance * movie.Cost));
+          }
+          break;
+        }
+
+        foreach (var elem in result)
+        {
+          ListViewItem item = new ListViewItem(elem.Item1.Name);
+          item.SubItems.Add(elem.Item2.ToString());
+          listView7.Items.Add(item);
+        }
+        tabControl2.SelectTab(4);
+      }
+      catch (Exception exception)
+      {
+        Program.log.Info(exception);
+        MessageBox.Show(exception.Message, "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+      }
+    }
+
+    private void tabControl1_Selected(object sender, TabControlEventArgs e)
+    {
+      comboBox5.Items.Clear();
+      foreach (var movie in control.Movies)
+      {
+        comboBox5.Items.Add(movie.Title);
+      }
+    }
+
     private void bestCass(object sender, EventArgs e)
     {
-      MovieReport[] results = control.getMostProfitMovies();
-      foreach (var movieReport in results)
+      Tuple<MovieReport[], double> results = control.getMostProfitMovies();
+      foreach (var movieReport in results.Item1)
       {
         ListViewItem item = new ListViewItem(movieReport.Title);
         item.SubItems.Add(movieReport.Genre);
@@ -732,6 +817,7 @@ namespace SummerPractice
         item.SubItems.Add(movieReport.Company);
         item.SubItems.Add(movieReport.Year.ToString());
         item.SubItems.Add(movieReport.Cost.ToString());
+        item.SubItems.Add(results.Item2.ToString());
         listView6.Items.Add(item);
       }
       tabControl2.SelectTab(3);
