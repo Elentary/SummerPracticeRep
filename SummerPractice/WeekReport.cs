@@ -8,8 +8,8 @@ namespace SummerPractice
 {
   public class WeekReport : Report
   {
-    public readonly Tuple<DateTime, DateTime> Period;
-    public readonly List<MovieReport> MovieReports;
+    public readonly Tuple<DateTime, DateTime> Period = new Tuple<DateTime, DateTime>(DateTime.Now, DateTime.Now);
+    public readonly List<MovieReport> MovieReports = new List<MovieReport>();
 
     public WeekReport(Tuple<DateTime, DateTime> period, Movie[] movies)
     {
@@ -19,7 +19,9 @@ namespace SummerPractice
         foreach (var cinema in movie.Cinemas)
         {
           Tuple<DateTime, DateTime> moviePeriod = cinema.getDates(movie);
-          if (moviePeriod.Item1 > period.Item2 || moviePeriod.Item2 < period.Item1)
+          if (moviePeriod == null)
+            continue;
+          if (MovieReports.Contains(new MovieReport(movie)) || moviePeriod.Item1 > period.Item2 || moviePeriod.Item2 < period.Item1)
             continue;
           MovieReports.Add(new MovieReport(movie));
         }

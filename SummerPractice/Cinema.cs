@@ -10,16 +10,16 @@ using ProtoBuf;
 namespace SummerPractice
 {
   [ProtoContract]
-  public class Cinema
+  public class Cinema: IComparable<Cinema>
   {
     [ProtoMember(1)] public String Name;
     [ProtoMember(2)] public String Adress;
     [ProtoMember(3)] public String CEO;
     [ProtoMember(4)] private CinemaType Type;
     [ProtoMember(5)] public int Capacity;
-    [ProtoMember(6)] public List<Movie> Movies;
-    [ProtoMember(7)] public SortedDictionary<Movie, Tuple<DateTime, DateTime>> Dates;
-    [ProtoMember(8)] public SortedDictionary<Tuple<Movie, DateTime>, int> Attendance;
+    [ProtoMember(6, AsReference = true)] public List<Movie> Movies;
+    [ProtoMember(7, AsReference = false)] public SortedDictionary<Movie, Tuple<DateTime, DateTime>> Dates;
+    [ProtoMember(8, AsReference = false)] public SortedDictionary<Tuple<Movie, DateTime>, int> Attendance;
 
     public Cinema()
     {
@@ -27,6 +27,9 @@ namespace SummerPractice
       {
         field.SetValue(this, null);
       }
+      Dates = new SortedDictionary<Movie, Tuple<DateTime, DateTime>>();
+      Attendance = new SortedDictionary<Tuple<Movie, DateTime>, int>(new MovieDateComparer());
+      Movies = new List<Movie>();
     }
 
     public Cinema(String name, String type, int capacity, String adress, String ceo, List<Movie> movies
@@ -70,7 +73,17 @@ namespace SummerPractice
 
     public Tuple<DateTime, DateTime> getDates(Movie movie)
     {
-      throw new NotImplementedException();
+      if (Dates.ContainsKey(movie))
+        return new Tuple<DateTime, DateTime>(Dates[movie].Item1, Dates[movie].Item2);
+      else
+        return null;
+    }
+
+    public int CompareTo(Cinema other)
+    {
+      if (other.Name != Name)
+        return Name.CompareTo(other.Name);
+      return Adress.CompareTo(other.Adress);
     }
 
     public override string ToString()

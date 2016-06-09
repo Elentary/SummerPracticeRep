@@ -9,7 +9,7 @@ namespace SummerPractice
     public class DailyReport: CinemaReport
     {
       public readonly DateTime Date;
-      public readonly SortedDictionary<Movie, int> Attendance;
+      public readonly SortedDictionary<Movie, int> Attendance = new SortedDictionary<Movie, int>();
 
       public DailyReport(Cinema cinema, DateTime date) : base(cinema)
       {

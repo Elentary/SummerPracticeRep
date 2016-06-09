@@ -51,8 +51,7 @@
             this.listView1.Location = new System.Drawing.Point(19, 18);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(418, 188);
-            this.listView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.listView1.Size = new System.Drawing.Size(401, 188);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -60,26 +59,31 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Название";
+            this.columnHeader1.Width = 75;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Адрес";
+            this.columnHeader2.Width = 85;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Директор";
+            this.columnHeader3.Width = 79;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Тип";
+            this.columnHeader4.Width = 75;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Вместимость";
+            this.columnHeader5.Width = 83;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(350, 212);
+            this.button2.Location = new System.Drawing.Point(333, 212);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 29);
             this.button2.TabIndex = 5;
@@ -89,7 +93,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(258, 212);
+            this.button1.Location = new System.Drawing.Point(241, 212);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 29);
             this.button1.TabIndex = 4;
@@ -101,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 245);
+            this.ClientSize = new System.Drawing.Size(425, 245);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);

@@ -8,7 +8,7 @@ using ProtoBuf;
 namespace SummerPractice
 {
   [ProtoContract]
-  public class Movie
+  public class Movie : IComparable<Movie>
   {
     [ProtoMember(1)] public String Title;
     [ProtoMember(2)] public String Genre;
@@ -18,7 +18,7 @@ namespace SummerPractice
     [ProtoMember(6)] public String Company;
     [ProtoMember(7)] public int Year;
     [ProtoMember(8)] public double Cost;
-    [ProtoMember(9)] public List<Cinema> Cinemas;
+    [ProtoMember(9, AsReference = true)] public List<Cinema> Cinemas;
 
     public Movie()
     {
@@ -26,6 +26,7 @@ namespace SummerPractice
       {
         field.SetValue(this, null);
       }
+      Cinemas = new List<Cinema>();
     }
 
     public Movie(String[] strVals, int year, double cost, List<Cinema> cinemas)
@@ -74,6 +75,18 @@ namespace SummerPractice
              && Year == other.Year && Cost.Equals(other.Cost) && Equals(Cinemas, other.Cinemas);
     }
 
+    public int CompareTo(Movie other)
+    {
+      if (Title.CompareTo(other.Title) != 0)
+        return Title.CompareTo(other.Title);
+      else if (Director.CompareTo(other.Director) != 0)
+        return Director.CompareTo(other.Director);
+      else if (Genre.CompareTo(other.Genre) != 0)
+        return Genre.CompareTo(other.Genre);
+      else
+        return 0;
+    }
+
     public override string ToString()
     {
       return
@@ -102,6 +115,23 @@ namespace SummerPractice
         hashCode = (hashCode * 397) ^ Cost.GetHashCode();
         hashCode = (hashCode * 397) ^ (Cinemas != null ? Cinemas.GetHashCode() : 0);
         return hashCode;
+      }
+    }
+  }
+
+  public class MovieDateComparer : Comparer<Tuple<Movie, DateTime>>
+  {
+    public override int Compare(Tuple<Movie, DateTime> x, Tuple<Movie, DateTime> y)
+    {
+      if (x.Item1.CompareTo(y.Item1) != 0)
+        return x.Item1.CompareTo(y.Item1);
+      else if (x.Item2 == y.Item2)
+        return 0;
+      else if (x.Item2 < y.Item2)
+        return -1;
+      else
+      {
+        return 1;
       }
     }
   }
